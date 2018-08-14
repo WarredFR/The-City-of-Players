@@ -46,15 +46,15 @@ bot.on('message', function(message) {
         }
 
         if(message.content === 'cool le bot') {
-            message.channel.sendMessage("Merci, c'est XeCrafT , mon créateur qui m'a développé ! :D")
+            message.channel.sendMessage("Merci, c'est Warred_FR , mon créateur qui m'a développé ! :D")
         }
 
         if(message.content === 'genial le bot') {
-            message.channel.sendMessage("Merci, c'est XeCrafT , mon créateur qui m'a développé ! :D")
+            message.channel.sendMessage("Merci, c'est Warred_FR , mon créateur qui m'a développé ! :D")
         }
 
-        if(message.content === 'XeCrafT') {
-            message.channel.sendMessage("XeCrafT c mon dev")
+        if(message.content === 'Warred_FR') {
+            message.channel.sendMessage("Warred_FR c mon dev")
         }
     
         if(message.content === 'Roll0000000') {
@@ -68,7 +68,7 @@ bot.on('message', function(message) {
             message.delete();
         }
         
-        if(message.content === 'sa va') {
+        if(message.content === 'ca va') {
             message.channel.sendMessage("Je vais toujours bien, je suis un robot!")
         }
 
@@ -94,8 +94,8 @@ bot.on('message', function(message) {
 bot.on("guildMemberAdd", function(member) {               
     member.addRole(member.guild.roles.find("name", "| • « MEMBRE »  • |"));
     var games = [
-    "A!help | AUSTELBOT V1.2",
-    "Développé par XeCrafT",
+    ":Help",
+    "Développé par Warred_FR",
         "http://erlealys.net",
     "http://austelclient.net",
     " " + new Date(),
