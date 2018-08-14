@@ -35,33 +35,6 @@ bot.on("ready", function () {
         console.log("*``*___*``*");
 });
 
- if(msg.content.startsWith('SONDAGE Y/N') || msg.content.startsWith('SONDAGE O/N')){
-      msg.react('✅')
-      msg.react('❌')
-    }
-  if(msg.content.startsWith('SONDAGE 2')){
-    msg.react('1⃣')
-    msg.react('2⃣')
-  }
-  if(msg.content.startsWith('SONDAGE 3')){
-    msg.react('1⃣')
-    msg.react('2⃣')
-    msg.react('3⃣')
-  }
-  if(msg.content.startsWith('SONDAGE 4')){
-    msg.react('1⃣')
-    msg.react('2⃣')
-    msg.react('3⃣')
-    msg.react('4⃣')
-  }
-    if(msg.content.startsWith('SONDAGE 5')){
-      msg.react('1⃣')
-      msg.react('2⃣')
-      msg.react('3⃣')
-      msg.react('4⃣')
-      msg.react('5⃣')
-  }
-
 bot.on('message', function(message) {
 
         if(message.content === 'AustelClient') {
