@@ -613,7 +613,8 @@ bot.on("message", async function(message) {
     }
 });
 
-if(message.content.startsWith(prefix + "sondage")){
+prefix = "!"; //Prefix
+    if(message.content.startsWith(prefix + "sondage")){
         const sondageSlice = message.content.slice(prefix.length + "sondage".length).trim();
 
         if(message.guild.channels.find('name', 'sondage')){
