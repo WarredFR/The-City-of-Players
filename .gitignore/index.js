@@ -583,7 +583,7 @@ bot.on("message", async function(message) {
                 fields: [
                     {
                         name: "Voici le Twitter !",
-                        value: 'http://twitter.com/',
+                        value: ' https://twitter.com/TheCityofPlaye3',
                         inline: false
                    }],                     
                                    footer: {
