@@ -613,6 +613,25 @@ bot.on("message", async function(message) {
     }
 });
 
+prefix = ":"; //Prefix
+    if(message.content.startsWith(prefix + "sondage")){
+        const sondageSlice = message.content.slice(prefix.length + "sondage".length).trim();
+
+        if(message.guild.channels.find('name', 'sondage')){
+            message.delete()
+        }
+        var embed = new Discord.RichEmbed()
+        .setTitle("Sondage")                    //Vous faites ce que vous voulez, soit un message simple renvoyé, soit embed (tuto #2)
+        .setDescription(sondageSlice)
+        message.channel.send(embed)
+        .then(function (message){
+            message.react("👍")
+            message.react("👎")
+        }).catch(function(){
+            //Rien ici
+        });
+    }
+
 
 
 bot.login(process.env.TOKEN);
