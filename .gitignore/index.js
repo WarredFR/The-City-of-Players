@@ -613,7 +613,6 @@ bot.on("message", async function(message) {
     }
 });
 
-prefix = ":"; //Prefix
     if(message.content.startsWith(prefix + "sondage")){
         const sondageSlice = message.content.slice(prefix.length + "sondage".length).trim();
 
