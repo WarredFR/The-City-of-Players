@@ -344,7 +344,7 @@ bot.on("message", async function(message) {
                 //addField(":stop", "Arrêter la musique !")
                 //addField(":pause", "Mettre la musique en pause !")
                 //addField(":unpause", "Relancer la musique en pause!")
-                //addField(":membres", "Savoir combien de personne sont sur le discord")
+                .addField(":membres", "Savoir combien de personne sont sur le discord")
                 .setColor("#01A9DB")
                 .setFooter("Idée de commande ? Proposer en MP!")
                 .setAuthor(message.author.username, message.author.avatarURL)
